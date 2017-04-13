@@ -4,5 +4,9 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="css/reset.css")
-    title My awesome title
+    title= title
   body
+    each book in books
+      .box 
+        h3= book.title
+        p= book.author
